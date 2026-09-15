@@ -16,3 +16,6 @@ De acuerdo con los entregables de la cátedra, se solicitaba inicialmente una ex
 2. Instalar las dependencias ejecutando: `pip install -r requirements.txt`
 3. Abrir el archivo ubicado en `/notebooks/Fase1_DataScience_Grupo8.ipynb` en Google Colab o Jupyter Lab.
 4. Asegurarse de ubicar el archivo de microdatos original del INE (`REG02_EPHC_ANUAL_2025.csv`) en la ruta de trabajo si se desea ejecutar el flujo completo de limpieza y los gráficos desde cero.
+
+## Nota sobre el dataset utilizado
+Dadas las indicaciones del trabajo, el dataset utilizado pasa a encontrarse como link en el archivo 'data.txt' debido a que supera los 25Mb. Para reproducir el trabajo se debe ingresar al link y descargar manualmente los datos.
