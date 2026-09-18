@@ -16,8 +16,8 @@
 
 ### Para clonar el repositorio en Google Colab
 ```python
-!git clone https://github.com/brugonzalez/DataScience-Grupo-8.git
-%cd DataScience-Grupo-8
+!git clone https://github.com/brugonzalez/Fase1_DataScience_Gonzalez-Fischer-Gonzalez.git
+%cd Fase1_DataScience_Gonzalez-Fischer-Gonzalez
 ```
 
 ### Linux y macOS
