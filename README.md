@@ -8,14 +8,42 @@
 - `/notebooks`: Contiene el Jupyter Notebook ejecutable (`.ipynb`) y la exportación oficial del informe ejecutable en formato **PDF**.
 - `/output`: Gráficos y salidas generadas durante la exploración de datos.
 
-## Nota Técnica sobre el Formato de Exportación (HTML vs. PDF)
-De acuerdo con los entregables de la cátedra, se solicitaba inicialmente una exportación en formato `.html`. Sin embargo, debido a restricciones nativas recientes en la interfaz web de Google Colab que limitan la conversión directa a dicho formato, se optó metodológicamente por exportar el informe integrado de la Fase 1 en formato **PDF de alta fidelidad** generado directamente desde el entorno de ejecución. Esta decisión garantiza que la integridad visual, los estilos de diseño, la paleta de colores de los 8 gráficos del EDA, las tablas de la bitácora y la estructura de texto se mantengan intactas y legibles para su correcta evaluación.
+## Cómo reproducir el proyecto
+1. Cloná el repositorio.
+2. Creá y activá un entorno virtual según tu sistema operativo.
+3. Instalá las dependencias del proyecto.
+4. Abrí el notebook con Jupyter o Google Colab.
 
-## Instrucciones para la Reproducibilidad
-1. Clonar el repositorio.
-2. Instalar las dependencias ejecutando: `pip install -r requirements.txt`
-3. Abrir el archivo ubicado en `/notebooks/Fase1_DataScience_Grupo8.ipynb` en Google Colab o Jupyter Lab.
-4. Asegurarse de ubicar el archivo de microdatos original del INE (`REG02_EPHC_ANUAL_2025.csv`) en la ruta de trabajo si se desea ejecutar el flujo completo de limpieza y los gráficos desde cero.
+### Para clonar el repositorio en Google Colab
+```python
+!git clone https://github.com/brugonzalez/DataScience-Grupo-8.git
+%cd DataScience-Grupo-8
+```
 
-## Nota sobre el dataset utilizado
-Dadas las indicaciones del trabajo, el dataset utilizado pasa a encontrarse como link en el archivo 'data.txt' debido a que supera los 25Mb. Para reproducir el trabajo se debe ingresar al link y descargar manualmente los datos.
+### Linux y macOS
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+### Windows
+En PowerShell:
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install -r requirements.txt
+```
+
+## Descargar los datos
+El dataset es pesado, así que no se sube al repositorio. Para bajarlo desde la raíz del proyecto, ejecutá:
+
+```bash
+python3 src/descargas_datos.py
+```
+
+Esto crea la carpeta `data` si hace falta y descarga el archivo localmente. Si ya existe, no lo vuelve a bajar.
+
+## Nota sobre el dataset
+Como el archivo supera el límite de peso del repositorio, se comparte por link externo. Para reproducir el trabajo completo, el script lo descarga automáticamente cuando se ejecuta, así el proyecto final no queda pesado.

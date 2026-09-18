@@ -1,3 +1,0 @@
-El dataset utilizado para este trabajo se encuentra en el siguiente link:
-Instituto Nacional de Estadística (INE) sobre la ENCUESTA PERMANENTE DE HOGARES CONTÍNUA - EPHC 2025.
-Fuente: https://www.ine.gov.py/microdatos/
